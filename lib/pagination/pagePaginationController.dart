@@ -8,9 +8,9 @@ class PagePaginationController extends GetxController {
   // Pagination settings
   RxInt currentPage = 1.obs;
   int totalPages = 5;
-  int itemsPerPage = 10;
+  int itemsPerPage = 5;
 
-  // Load data for the current page
+  //      Load data
   void loadData() {
     isLoading.value = true;
 
