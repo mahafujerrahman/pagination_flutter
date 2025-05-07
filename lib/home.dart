@@ -54,6 +54,12 @@ class _MyImagePickerScreenState extends State<MyImagePickerScreen> {
               },
               child: Text("Show List"),
             ),
+            ElevatedButton(
+              onPressed: (){
+                Get.toNamed(Routes.PagePagination);
+              },
+              child: Text(" Page PaginationShow List"),
+            ),
           ],
         ),
       ),

@@ -28,6 +28,12 @@ class NameView extends GetView<NameController> {
             },
             child: Text("Show List"),
           ),
+          ElevatedButton(
+            onPressed: (){
+              Get.toNamed(Routes.PagePagination);
+            },
+            child: Text(" Page Pagination Show List"),
+          ),
         ],
       ),
     );

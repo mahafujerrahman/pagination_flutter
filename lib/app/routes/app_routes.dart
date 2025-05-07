@@ -5,11 +5,13 @@ abstract class Routes {
   Routes._();
   static const NAME = _Paths.NAME;
   static const Pagination = _Paths.Pagination;
+  static const PagePagination = _Paths.PagePagination;
 }
 
 abstract class _Paths {
   _Paths._();
   static const NAME = '/name';
   static const Pagination = '/Pagination';
+  static const PagePagination = '/PagePagination';
 }
 

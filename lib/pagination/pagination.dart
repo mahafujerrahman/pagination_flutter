@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pagination_flutter/pagination/controller.dart';
@@ -25,7 +26,8 @@ class Pagination extends StatelessWidget {
             itemCount: paginationController.data.length + (paginationController.isLoading.value ? 1 : 0),
             itemBuilder: (context, index) {
               if (index == paginationController.data.length && paginationController.isLoading.value) {
-                return Center(child: CircularProgressIndicator());  // Show loading spinner
+                return Center(child: CupertinoActivityIndicator(radius: 32, color: Colors.red,
+                ),);  // Show loading spinner
               }
               return ListTile(
                 title: Text('Item ${paginationController.data[index]}'),
