@@ -14,27 +14,24 @@ class NameView extends GetView<NameController> {
         title: const Text('NameView'),
         centerTitle: true,
       ),
-      body: Column(
-        children: [
-          const Center(
-            child: Text(
-              'NameView is working',
-              style: TextStyle(fontSize: 20),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: (){
+                Get.toNamed(Routes.Pagination);
+              },
+              child: Text("Show List"),
             ),
-          ),
-          ElevatedButton(
-            onPressed: (){
-              Get.toNamed(Routes.Pagination);
-            },
-            child: Text("Show List"),
-          ),
-          ElevatedButton(
-            onPressed: (){
-              Get.toNamed(Routes.PagePagination);
-            },
-            child: Text(" Page Pagination Show List"),
-          ),
-        ],
+            ElevatedButton(
+              onPressed: (){
+                Get.toNamed(Routes.PagePagination);
+              },
+              child: Text(" Page Pagination Show List"),
+            ),
+          ],
+        ),
       ),
     );
   }
