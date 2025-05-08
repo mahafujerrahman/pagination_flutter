@@ -50,7 +50,7 @@ class PagePagination extends StatelessWidget {
                     children: List.generate(paginationController.totalPages, (i) {
                       return GestureDetector(
                         onTap: () {
-                          paginationController.goToPage(i + 1);  // Go to specific page
+                          paginationController.goToPage(i + 1);
                         },
                         child: Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8.0),

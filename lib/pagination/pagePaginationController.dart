@@ -16,6 +16,7 @@ class PagePaginationController extends GetxController {
 
     data.clear();
     Future.delayed(Duration(seconds: 2), () {
+
       // Simulate network delay
       for (int i = 1; i <= itemsPerPage; i++) {
         data.add((currentPage.value - 1) * itemsPerPage + i);
@@ -33,7 +34,7 @@ class PagePaginationController extends GetxController {
   }
 
   // Go to the next page
-  void nextPage() {
+   nextPage() {
     if (currentPage.value < totalPages) {
       currentPage.value++;
       loadData();
