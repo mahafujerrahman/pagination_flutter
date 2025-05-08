@@ -6,6 +6,8 @@ import 'package:pagination_flutter/pagination/controller.dart';
 
 
 class Pagination extends StatelessWidget {
+  const Pagination({super.key});
+
   @override
   Widget build(BuildContext context) {
     final PaginationController paginationController = Get.put(PaginationController());
